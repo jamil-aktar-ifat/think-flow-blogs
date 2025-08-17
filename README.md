@@ -1,4 +1,4 @@
-# NexaBlog-Starter-Pack
+# ThinkFlowBlog-Starter-Pack
 
 ## Installation:
 
