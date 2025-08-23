@@ -1,6 +1,8 @@
 "use client";
 
 import BlogCard from "@/components/ui/BlogCard";
+import Spinner from "@/components/ui/Spinner";
+import { useGetBlogsQuery } from "@/redux/apis/blogs.slice";
 import { Blog } from "@/types";
 // import { Metadata } from "next";
 
@@ -20,6 +22,14 @@ const BlogsPage = () => {
   // });
   // const blogs =  res.json();
   // //   console.log(blogs);
+
+  const { data: blogs, isLoading } = useGetBlogsQuery({});
+  // console.log(data);
+
+  if (isLoading) {
+    return <Spinner></Spinner>;
+  }
+
   return (
     <div className="mx-10">
       <div className="my-10">
