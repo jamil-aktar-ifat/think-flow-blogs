@@ -1,23 +1,25 @@
+"use client";
+
 import BlogCard from "@/components/ui/BlogCard";
 import { Blog } from "@/types";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "ThinkFlow | All Blogs",
-  description: "Navigate all the blogs from ThinkFlow",
-  keywords: "ThinkFlow, Jamil",
-  publisher: "Jamil",
-  alternates: {
-    canonical: "http://localhost:3000/blogs",
-  },
-};
+// export const metadata: Metadata = {
+//   title: "ThinkFlow | All Blogs",
+//   description: "Navigate all the blogs from ThinkFlow",
+//   keywords: "ThinkFlow, Jamil",
+//   publisher: "Jamil",
+//   alternates: {
+//     canonical: "http://localhost:3000/blogs",
+//   },
+// };
 
-const BlogsPage = async () => {
-  const res = await fetch("http://localhost:5001/blogs", {
-    cache: "no-cache",
-  });
-  const blogs = await res.json();
-  //   console.log(blogs);
+const BlogsPage = () => {
+  // const res = await fetch("http://localhost:5001/blogs", {
+  //   cache: "no-cache",
+  // });
+  // const blogs =  res.json();
+  // //   console.log(blogs);
   return (
     <div className="mx-10">
       <div className="my-10">
