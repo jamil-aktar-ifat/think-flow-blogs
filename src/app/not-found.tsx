@@ -1,15 +1,9 @@
-import Image from "next/image";
+
 
 const NotFoundPage = () => {
   return (
-    <div className="w-[90%] mx-auto my-5 ">
-      <Image
-        src="https://freefrontend.com/assets/img/html-css-404-page-templates/Pure-CSS-404-Error-Page.gif"
-        width={1000}
-        height={500}
-        alt="not found page"
-        className="w-full rounded-3xl"
-      />
+    <div className=" mx-auto my-5 ">
+      <h1 className="text-2xl text-center my-20"> 404 Not Found</h1>
     </div>
   );
 };
